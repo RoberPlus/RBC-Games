@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whishlists",
+  "info": {
+    "singularName": "whishlist",
+    "pluralName": "whishlists",
+    "displayName": "Whishlist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "game": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::game.game"
+    }
+  }
+}
